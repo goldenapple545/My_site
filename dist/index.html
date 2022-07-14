@@ -17,7 +17,52 @@
 <body>
 
     <div class="page">
-        <header class="header">header</header>
+        <header class="header">
+            <div class="header__left">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link has-subnav" href="#">Статьи</a>
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="#">Создание сайтов</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Интернет-маркетинг</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Продвижение видео</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Обо мне</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Реклама</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Профиль</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Выйти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="search" action="/" method="post">
+                    <input class="search__input" type="text" placeholder="Поиск по блогу">
+                </form>
+            </div>
+        </header>
 
         <aside class="sidebar">
             <aside class="sidebar">
@@ -79,8 +124,42 @@
             <div class="container">
                 
                 
-                Hello!
+                <!-- Stories -->
+                <div class="stories">
+                    <div class="stories__item">
+                        <img class="stories__preview"
+                         src="assets/images/stories/stories-1.jpg" alt="">
+                        <div class="stories__title">Отдыхаю на природе</div>
+                        <time class="stories__date"
+                          datetime="2020-09-21 19:21">21.09.2020</time>
+                    </div>
+                    <div class="stories__item">
+                        <img class="stories__preview"
+                         src="assets/images/stories/stories-2.jpg" alt="">
+                        <div class="stories__title">Заканчиваю сложный проект</div>
+                        <time class="stories__date"
+                              datetime="2020-09-21 19:21">19.09.2020</time>
+                    </div>
+                    <div class="stories__item">
+                        <img class="stories__preview"
+                         src="assets/images/stories/stories-3.jpg" alt="">
+                        <div class="stories__title">Переехал в новую квартиру</div>
+                        <time class="stories__date"
+                              datetime="2020-09-21 19:21">14.09.2020</time>
+                    </div>
+                    <div class="stories__item">
+                        <img class="stories__preview"
+                         src="assets/images/stories/stories-4.jpg" alt="">
+                        <div class="stories__title">Осень пришла!</div>
+                        <time class="stories__date"
+                              datetime="2020-09-21 19:21">28.08.2020</time>
+                    </div>
+                </div>
                 
+                <!-- Add post -->
+                <div class="add-post">
+                    
+                </div>
             </div>
         </main>
     </div>
