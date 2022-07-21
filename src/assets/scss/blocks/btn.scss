@@ -24,6 +24,7 @@
 
     &:hover {
       background: darken($red, 5%);
+      text-decoration: none;
     }
   }
 
@@ -33,7 +34,16 @@
 
     &:hover {
       background: darken($blue, 5%);
+      text-decoration: none;
     }
+  }
+
+  &--rounded {
+    border-radius: 0.41em;
+  }
+
+  &--small {
+    padding: 0.7em 1.25em;
   }
 }
 
