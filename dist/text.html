@@ -12,7 +12,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title>Profile</title>
+    <title>Text Page</title>
 </head>
 <body>
 
@@ -131,46 +131,63 @@
         <main class="main">
             <div class="container">
                 
-                <h1 class="page__title">Профиль</h1>
                 
-                <form class="form" action="/" method="post">
-                    <div class="cabinet">
-                        <div class="cabinet__form">
-                            <div class="form__group form__group--md">
-                                <input type="text" class="form__control" placeholder="Ваше имя" value="Виктуров Егор">
-                                <span class="form__line"></span>
-                            </div>
-                
-                            <div class="form__group form__group--md">
-                                <input type="email" class="form__control" placeholder="Ваш e-mail" value="egorvikturov@gmail.com">
-                                <span class="form__line"></span>
-                            </div>
-                
-                            <div class="form__group form__group--md">
-                                <input type="password" class="form__control" placeholder="Новый пароль" value="">
-                                <span class="form__line"></span>
-                            </div>
-                
-                            <div class="form__group form__group--md">
-                                <input type="password" class="form__control" placeholder="Подтвердите пароль" value="">
-                                <span class="form__line"></span>
-                            </div>
-                        </div>
-                
-                        <div class="cabinet__avatar">
-                            <img src="https://place-hold.it/150" alt="">
-                
-                            <label class="cabinet__file">
-                                <input type="file">
-                                выбрать аватар
-                            </label>
-                        </div>
+                <article class="post">
+                    <div class="post__actions">
+                        <a href="index.html">Вернуться назад</a>
+                        <a href="#">
+                            Поделиться<img class="post__actions--icon" src="assets/images/share.svg" alt="">
+                        </a>
                     </div>
                 
-                    <div class="form__footer">
-                        <button class="btn btn--blue btn--rounded btn--small" type="submit">Сохранить</button>
+                    <div class="post__header">
+                        <h1 class="post__title post__title--mb0">Как писать код быстро
+                            и безболезненно?</h1>
                     </div>
-                </form>
+                
+                    <div class="post__content">
+                        <div class="post__text">
+                            <h2>Title h2</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid aut consectetur distinctio doloremque eos, fugiat hic, itaque officia porro quam repellendus sapiente tempora totam velit. Eaque explicabo porro quasi?</p>
+                
+                            <h3>Title h3</h3>
+                            <p><a href="#">Lorem ipsum</a> dolor sit amet, consectetur adipisicing elit. Asperiores culpa cumque eius illum sint voluptatibus? Ad alias aspernatur aut cumque deserunt, eligendi ex illo ipsum nam, quasi, saepe tempore voluptatibus.</p>
+                
+                            <h4>Title h4</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam dicta dolorum eligendi molestias nobis nostrum perferendis porro veniam. Adipisci autem delectus laboriosam molestias nemo odit optio quam, rerum voluptate?</p>
+                
+                            <p>
+                                <img src="assets/images/image.jpg" alt="">
+                            </p>
+                
+                            <ul>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                            </ul>
+                
+                            <ol>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                            </ol>
+                
+                            <table>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+                            </table>
+                
+                            <p>
+                                <span class="fr-video">
+                                    <iframe src="https://www.youtube.com/embed/HeMIZC2rkMo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </span>
+                            </p>
+                        </div> <!-- /.post__text -->
+                    </div> <!-- /.post__content -->
+                </article><!-- /.post -->
             </div>
         </main>
     </div>
