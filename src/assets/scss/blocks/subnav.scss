@@ -6,12 +6,20 @@
 
   background-color: $blue;
   border-radius: 0 0 5px 5px;
+  box-shadow: 0 6px 8px rgba($black, .2);
 
   position: absolute;
   top: 100%;
   left: 0;
 
-  box-shadow: 0 6px 8px rgba($black, .2);
+  @include breakpoint($tablet-bp) {
+    position: static;
+    width: 100%;
+    padding-left: 2rem;
+
+    background-color: transparent;
+    box-shadow: none;
+  }
 }
 
 .subnav__link {
@@ -27,5 +35,17 @@
   &:hover {
     background-color: darken($blue, 5%);
     text-decoration: none;
+  }
+
+  @include breakpoint($tablet-bp) {
+    padding-left: 0;
+    padding-right: 0;
+
+    font-size: 1.5rem;
+    font-weight: 300;
+
+    &:hover {
+      background: none;
+    }
   }
 }
