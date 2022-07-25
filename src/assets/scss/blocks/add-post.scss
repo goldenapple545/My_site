@@ -21,6 +21,10 @@
   flex-shrink: 0;
   display: flex;
   justify-content: flex-end;
+
+  @include breakpoint($mobile-bp) {
+    width: 9rem;
+  }
 }
 
 .add-post__textarea {
@@ -53,10 +57,15 @@
   cursor: pointer;
 
   transition: background-color .2s ease-in-out;
+
+  @include breakpoint($mobile-bp) {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
 }
 
 .add-post__file {
-  background: #EBEBEB url("../images/add-photo.svg") center no-repeat;
+  background: #ebebeb url("../images/add-photo.svg") center no-repeat;
   input {
     display: none;
   }
@@ -64,13 +73,25 @@
   &:hover {
     background-color: darken(#EBEBEB, 10%);
   }
+
+  @include breakpoint($mobile-bp) {
+    background-size: 18px;
+  }
 }
 
 .add-post__send {
   margin-left: 1.5rem;
-  background-color: $blue;
+
+  font-size: 0;
+  color: transparent;
+
+  background: $blue url("../images/send-post.svg") center no-repeat;
 
   &:hover {
     background-color: darken($blue, 5%);
+  }
+
+  @include breakpoint($mobile-bp) {
+    background-size: 15px;
   }
 }

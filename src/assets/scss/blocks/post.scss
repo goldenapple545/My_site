@@ -32,6 +32,7 @@
 .post__title {
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
+  line-height: 1.4;
   color: $white;
   font-weight: 500;
 
@@ -44,8 +45,8 @@
     }
   }
 
-  &--mb0 {
-    margin-bottom: 0;
+  &--open {
+    margin-bottom: .75rem;
   }
 }
 
