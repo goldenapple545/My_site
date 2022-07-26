@@ -150,7 +150,7 @@ function js(cb) {
         .pipe(webpackStream({
           mode: "production",
           output: {
-            filename: 'app.js',
+            filename: 'modalmodal.js',
           }
         }))
         .pipe(dest(path.build.js))
@@ -173,7 +173,7 @@ function jsWatch(cb) {
         .pipe(webpackStream({
           mode: "development",
           output: {
-            filename: 'app.js',
+            filename: 'file.js',
           }
         }))
         .pipe(dest(path.build.js))

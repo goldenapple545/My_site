@@ -1,7 +1,6 @@
 .modal {
   padding: 1rem;
-
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -15,6 +14,9 @@
   left: 0;
   z-index: $z-index-modal;
 
+  &.show {
+    display: flex;
+  }
 }
 
 .modal__content {
@@ -25,9 +27,22 @@
 
   background-color: $primary;
   border-radius: 5px;
+  opacity: 0;
+
+  transform: translateY(-50px);
+  transition: transform .2s ease-in-out, opacity .2s linear;
+
+  @include breakpoint($mobile-bp) {
+    padding: 5rem 3rem 3rem;
+  }
 
   &--contact {
     padding-bottom: 2.5rem;
+  }
+
+  &--story {
+    padding: 0;
+    background: none;
   }
 }
 
@@ -71,4 +86,9 @@
       text-decoration: none;
     }
   }
+}
+
+.modal__video {
+  display: block;
+  margin: 0 auto;
 }
